@@ -22,7 +22,7 @@ function Infos(props) {
       <h1 className={classes.name}>Ayoub Guerboub</h1>
   <h2 className={classes.job}>{titles[nb]}</h2>
       <div className={classes.mobile}>06 68 42 42 79</div>
-      <a href="www.linkedin.com/in/ayoubguerboub" className={classes.linkedin}>
+      <a href="https://www.linkedin.com/in/ayoubguerboub" className={classes.linkedin}>
         <img
           src="/img/linkedin-logo.png"
           alt="Linkedin"
