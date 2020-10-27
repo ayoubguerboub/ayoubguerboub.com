@@ -1,0 +1,63 @@
+.skills {
+  width: 840px;
+  height: 470px;
+  background-color: white;
+  display: inline-block;
+  text-align: center;
+  position: relative;
+}
+
+.backarrow {
+  width: 17px;
+  height: 14px;
+  display: inline-block;
+  position: absolute;
+  top: -14px;
+  left: 0;
+  background-image: url('/img/arrow-left.png');
+  cursor: pointer;
+}
+
+.skills h3 {
+  font-family: bahn-light;
+  font-weight: 100;
+  font-size: 35px;
+  background-color: #5aa7b7;
+  display: inline-block;
+  margin: 0 0 20px 0;
+  border-bottom: 2px solid #1b8fa7;
+}
+
+.skills ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.skills ul li {
+  display: inline-block;
+  margin: 0 35px 35px 35px;
+  font-size: 25px;
+  font-family: bahn-light;
+}
+
+@media screen and (max-width: 810px) {
+  .skills {
+    width: 100%;
+    height: auto;
+    margin-top: 120px;
+  }
+
+  .skills h3 {
+    font-size: 30px;
+  }
+
+  .skills ul li {
+    font-size: 20px;
+  }
+
+  .backarrow {
+    left: 10px;
+    top: -20px;
+  }
+}

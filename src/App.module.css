@@ -1,0 +1,152 @@
+@font-face {
+  font-family: 'bahn';
+  font-weight: normal;
+  src: url('/fonts/bahn.ttf');
+}
+
+@font-face {
+  font-family: 'bahn-light';
+  font-weight: 100;
+  src: url('/fonts/bahn.ttf');
+}
+
+@font-face {
+  font-family: 'bahn-bold';
+  font-weight: 700;
+  src: url('/fonts/bahn.ttf');
+}
+
+@keyframes appear {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes separator {
+  0% {
+    background-size: 0px 1px;
+  }
+  100% {
+    background-size: 115px 1px;
+  }
+}
+
+.App {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  animation: appear ease-out 1s;
+}
+
+html {
+  color: #373737;
+  font-family: bahn;
+}
+
+.gradient {
+  display: inline-block;
+  width: 100%;
+  height: 90px;
+  background: linear-gradient(
+    180deg,
+    rgba(172, 172, 172, 1) 0%,
+    rgba(255, 255, 255, 1) 100%
+  );
+}
+
+.blue {
+  background: linear-gradient(180deg, #1b8fa7 0%, rgba(255, 255, 255, 1) 100%);
+}
+
+.orange {
+  background: linear-gradient(180deg, #fc7d1b 0%, rgba(255, 255, 255, 1) 100%);
+}
+
+.pink {
+  background: linear-gradient(180deg, #f65d58 0%, rgba(255, 255, 255, 1) 100%);
+}
+
+.content {
+  margin: auto;
+  margin-top: 150px;
+  display: grid;
+  width: 1200px;
+  grid-template-columns: 1fr 1fr;
+  position: relative;
+}
+
+.infos {
+  text-align: right;
+  background: no-repeat url(/img/separator.png);
+  display: inline-block;
+  margin-right: 110px;
+  animation: separator ease-out 1s;
+  transition: 0.5s;
+}
+
+.rightC {
+  transition: 0.5s;
+}
+
+.presentation {
+  font-family: bahn-light;
+  font-size: 25px;
+  text-align: right;
+  margin-top: 160px;
+  padding-right: 20px;
+  border-right: 1px solid rgb(100, 100, 100);
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.5s;
+}
+
+.hide {
+  opacity: 0;
+  visibility: hidden;
+  overflow: hidden;
+}
+
+@media screen and (max-width: 1200px) {
+  .content {
+    width: 800px;
+  }
+}
+
+@media screen and (max-width: 810px) {
+  .content {
+    width: 100%;
+    grid-template-columns: 1fr;
+    margin-top: 20px;
+  }
+
+  .infos {
+    margin-right: 20px;
+    background: none;
+  }
+
+  .presentation {
+    font-size: 20px;
+    padding: 0;
+    margin-top: 30px;
+    margin-right: 20px;
+    border-right: none;
+  }
+
+  .container {
+    display: inline-block;
+  }
+}

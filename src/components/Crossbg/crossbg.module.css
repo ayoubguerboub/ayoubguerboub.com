@@ -1,0 +1,59 @@
+.bluecross {
+  width: 26px;
+  height: 26px;
+  background-image: url(/img/bluecross.png);
+  position: absolute;
+  bottom: 17%;
+  left: 4%;
+  animation: blueanimation 3s infinite;
+}
+
+@keyframes blueanimation {
+  0% {
+    transform: translate(10px, 10px);
+  }
+  50% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(10px, 10px);
+  }
+}
+
+.pinkcross {
+  width: 26px;
+  height: 26px;
+  background-image: url(/img/pinkcross.png);
+  position: absolute;
+  bottom: 12%;
+  left: 9%;
+  animation: pinkanimation 3s infinite;
+}
+
+@keyframes pinkanimation {
+  0% {
+    transform: translate(0, 0);
+  }
+  50% {
+    transform: translate(10px, -10px);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+.yellowcross {
+  width: 26px;
+  height: 26px;
+  background-image: url(/img/yellowcross.png);
+  position: absolute;
+  bottom: 7%;
+  left: 5%;
+  animation: blueanimation 3s infinite;
+}
+
+@media screen and (max-width: 810px) {
+  .crossbg {
+    display: none;
+  }
+}

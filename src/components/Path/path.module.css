@@ -1,0 +1,68 @@
+.path {
+  width: 840px;
+  height: 470px;
+  background-color: white;
+  display: inline-block;
+  text-align: center;
+  position: relative;
+  transition: 0.5s;
+}
+
+.backarrow {
+  width: 17px;
+  height: 14px;
+  display: inline-block;
+  position: absolute;
+  top: -14px;
+  left: 0;
+  background-image: url('/img/arrow-left.png');
+  cursor: pointer;
+}
+
+.path .date {
+  font-family: bahn-light;
+  font-size: 35px;
+  margin: 10px 0 0 0;
+}
+
+.path h3 {
+  margin: 0 0 10px 0;
+  font-size: 30px;
+  font-weight: 200;
+}
+
+.path h3.withImage {
+  margin: 0;
+}
+
+.path .separator {
+  width: 2px;
+  height: 42px;
+  background-color: #fc7d1b;
+  display: inline-block;
+}
+
+.path img {
+  width: 55px;
+}
+
+@media screen and (max-width: 810px) {
+  .path {
+    width: 100%;
+    height: auto;
+    margin-top: 120px;
+  }
+
+  .path .date {
+    font-size: 27px;
+  }
+
+  .path h3 {
+    font-size: 23px;
+  }
+
+  .backarrow {
+    left: 10px;
+    top: -20px;
+  }
+}
