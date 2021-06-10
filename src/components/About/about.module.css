@@ -1,0 +1,66 @@
+.about {
+	width: 840px;
+	height: 470px;
+	background-color: white;
+	display: inline-block;
+	position: relative;
+	transition: 0.5s;
+}
+
+.backarrow {
+	width: 17px;
+	height: 14px;
+	display: inline-block;
+	position: absolute;
+	top: -14px;
+	left: 0;
+	background-image: url('/img/arrow-left.png');
+	cursor: pointer;
+}
+
+.about .text {
+	padding: 0px 100px 0px 100px;
+}
+
+.about h3 {
+	font-size: 30px;
+	margin: 20px 0 0 0;
+}
+
+.about p {
+	font-size: 20px;
+}
+
+.about img {
+	margin: auto;
+	width: 180px;
+}
+
+@media screen and (max-width: 810px) {
+	.about {
+		width: 100%;
+		height: auto;
+		margin-top: 120px;
+	}
+
+	.about .text {
+		padding: 0px 30px 0px 30px;
+	}
+
+	.about img {
+		width: 120px;
+	}
+
+	.backarrow {
+		left: 10px;
+		top: -20px;
+	}
+
+	.about h3 {
+		font-size: 25px;
+	}
+
+	.about p {
+		font-size: 15px;
+	}
+}
