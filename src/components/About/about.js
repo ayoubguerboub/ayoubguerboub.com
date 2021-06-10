@@ -22,7 +22,7 @@ function Path(props) {
 							de l’informatique et plus particulièrement le développement web,
 							j'ai tout de suite été convaincu que c'était ma voie.
 							<br />
-							Je suis aussi un travilleur acharné, motivé par la passion depuis
+							Je suis aussi un travailleur acharné, motivé par la passion depuis
 							toujours. Je mets donc du cœur à l’ouvrage, du sérieux, et
 							beaucoup de perfectionnisme.
 							<br />
