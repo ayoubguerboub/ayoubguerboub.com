@@ -1,32 +1,41 @@
-import React from 'react';
+import React from "react";
 
-import classes from './skills.module.css';
+import classes from "./skills.module.css";
 
 function Skills(props) {
   return (
     <div className={props.css}>
       <div className={classes.skills}>
-        <div className={classes.backarrow} onClick={() => {
-          props.handleSkillsDisp();
-          props.handleInfosDisp(null, "appear");
-          props.handleRightCDisp(null, "appear");
-        }}></div>
-        <h3>Frontend</h3><br/>
+        <div
+          className={classes.backarrow}
+          onClick={() => {
+            props.handleSkillsDisp();
+            props.handleInfosDisp(null, "appear");
+            props.handleRightCDisp(null, "appear");
+          }}
+        ></div>
+        <h3>Frontend</h3>
+        <br />
         <ul>
-          <li>HTML</li>
-          <li>CSS</li>
+          <li>HTML/CSS</li>
           <li>Javascript</li>
           <li>React</li>
+          <li>Vue.js</li>
+          <li>Redux</li>
         </ul>
-        <h3>Backend</h3><br/>
+        <h3>Backend</h3>
+        <br />
         <ul>
           <li>MongoDB</li>
           <li>Node.js</li>
           <li>Express</li>
+          <li>Django</li>
         </ul>
-        <h3>Autres</h3><br/>
+        <h3>Others</h3>
+        <br />
         <ul>
-          <li>Web design</li>
+          <li>Git/Github</li>
+          <li>UI/UX Design</li>
         </ul>
       </div>
     </div>
