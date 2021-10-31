@@ -1,0 +1,14 @@
+.App {
+  font-family: Arial;
+}
+
+.App .mainList {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 50px;
+}
+
+.App .generalInfos {
+  text-align: center;
+  margin-top: 30px;
+}
