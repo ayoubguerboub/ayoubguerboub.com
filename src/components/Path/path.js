@@ -16,9 +16,7 @@ function Path(props) {
         ></div>
 
         <div className={classes.date}>2020</div>
-        <h3 className={classes.withImage}>
-          Full Stack engineer - 42 Shcool Paris
-        </h3>
+        <h3 className={classes.withImage}>42 Shcool Paris</h3>
         <img src="/img/42-logo.svg" alt="42 School" />
         <br />
 
@@ -31,7 +29,7 @@ function Path(props) {
         <br />
 
         <div className={classes.date}>2015</div>
-        <h3>Science High School Diploma - Alexandre Dumas High School</h3>
+        <h3>Science High School Diploma</h3>
       </div>
     </div>
   );
