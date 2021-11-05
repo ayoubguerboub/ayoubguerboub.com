@@ -1,0 +1,63 @@
+* {
+  font-size: 25px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.ColouredSquares,
+#root {
+  width: 100%;
+  height: 100%;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
+.red-button {
+  border-color: rgb(158, 47, 47);
+  background-color: rgb(214, 103, 103);
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.green-button {
+  border-color: rgb(30, 185, 95);
+  background-color: rgb(121, 233, 167);
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.blue-button {
+  border-color: rgb(67, 51, 207);
+  background-color: rgb(107, 93, 228);
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+.purple-button {
+  border-color: rgb(145, 29, 145);
+  background-color: rgb(204, 74, 204);
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+.squares-wrapper {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.square {
+  width: 150px;
+  height: 150px;
+  border: 1px solid black;
+  display: inline-block;
+}
